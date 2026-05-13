@@ -65,13 +65,13 @@ export default function Hero() {
             className="mt-6"
           >
             <motion.div
-              initial={{ rotate: -1.5 }}
-              animate={{ rotate: 0 }}
+              initial={{ rotate: -8 }}
+              animate={{ rotate: [-6, 4, -3.5, 2.5, -1.5, 0.8, -0.4, 0] }}
               transition={{
-                type: "spring",
-                stiffness: 60,
-                damping: 10,
+                duration: 3.2,
                 delay: 0.8,
+                ease: "easeInOut",
+                times: [0, 0.20, 0.34, 0.47, 0.65, 0.76, 0.90, 1.0],
               }}
               style={{ transformOrigin: "top center" }}
             >
